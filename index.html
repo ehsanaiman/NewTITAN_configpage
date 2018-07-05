@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Configuration Page for New TITAN</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Titan.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ddslickColor.js"></script>
+  </head>
+  <body style="background-color:Black">
+    <div data-role="page">
+     <div data-role="header">
+      <h1><font color="White">New TITAN</font></h1>
+     </div>
+    <div data-role="main" id="maincontent" class="ui-content" >
+    <form>
+	<font color="black">
+	<fieldset id="lSrcSaver" class="ui-field-contain"  style="background-color:orange">
+        <span><label><b>Screen Saver:</b></label></span>
+		<span><label>  Wait Time:</label></span>
+		<span><select name="Time" id="Time">
+				<option value="1">1 minute</option>
+				<option value="3">3 minutes</option>
+				<option value="5">5 minutes</option>
+				<option value="10">10 minutes</option>
+				<option value="30">30 minutes</option>
+				<option value="60">60 minutes</option>
+			</select>
+		</span>
+	</fieldset>
+	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hSrcSaver" id="hSrcSaver" value="" />
+		<select name="SrcSaver" id="SrcSaver">
+     		<option value="0" 
+						data-description="Titan is always ON"
+                        data-imagesrc="images/TitanSportman.png">No Screen Saver</option>
+     		<option value="1"
+						data-description="Battery saver, Titan is always ON, shake watch to see Seconds hand for time specified"
+                        data-imagesrc="images/secON.png">Seconds For A While</option>
+     		<option value="2"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/skully_bw.png">Skully</option>
+     		<option value="3"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/zebra.png">Zebra</option>
+     		<option value="4"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/picasso1.png">Picasso 1</option>
+     		<option value="5"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/picasso3.png">Picasso 2</option>
+     		<option value="6"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/picasso4.png">Picasso 3</option>
+     		<option value="7"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/picasso5.png">Picasso 4</option>
+     		<option value="8"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/picasso6.png">Picasso 5</option>
+     		<option value="9"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/vangogh1.png">Van Gogh 1</option>
+     		<option value="10"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/vangogh2.png">Van Gogh 2</option>
+     		<option value="11"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/vangogh3.png">Van Gogh 3</option>
+     		<option value="12"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/vangogh4.png">Van Gogh 4</option>
+     		<option value="13"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/modigliani1.png">Modigliani 1</option>
+     		<option value="14"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/modigliani2.png">Modigliani 2</option>
+     		<option value="15"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/modigliani3.png">Modigliani 3</option>
+     		<option value="16"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/modigliani4.png">Modigliani 4</option>
+    		<option value="17"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/chagall1.png">Chagall 1</option>
+     		<option value="18"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/chagall2.png">Chagall 2</option>
+     		<option value="19"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/chagall3.png">Chagall 3</option>
+    		<option value="20"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/munch1.png">Munch</option>
+     		<option value="21"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/monalisa.png">Monalisa</option>
+     		<option value="22"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/lempika1.png">Lempika 1</option>
+     		<option value="23"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/lempika2.png">Lempika 2</option>
+    		<option value="24"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/Dali.png">Dali</option>
+     		<option value="25"
+						data-description="Battery saver, you see the Screen Saver Image, shake watch to see Titan for time specified"
+                        data-imagesrc="images/collage.png">All Random</option>
+		</select>
+	</fieldset>
+	<fieldset id="lClockType" class="ui-field-contain"  style="background-color:orange">
+        <label><b>Color Theme:</label>
+	</fieldset>
+	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hClockType" id="hClockType" value="" />
+		<select name="ClockType" id="ClockType">
+     		<option value="0" 
+                        data-imagesrc="images/TitanSportman.png">Sport Man</option>
+      		<option value="1" 
+			            data-imagesrc="images/TitanFluor.png">Fluor Classic</option>
+      		<option value="2"
+			            data-imagesrc="images/TitanPinkPanter.png">Pink Panther Lovers</option>
+      		<option value="3"
+			            data-imagesrc="images/TitanFuture.png">Welcome To The Future</option>
+      		<option value="4"
+			            data-imagesrc="images/TitanGreen.png">Green Grass</option>
+      		<option value="5"
+			            data-imagesrc="images/TitanPassion.png">Passion o'Clock</option>
+      		<option value="6"
+			            data-imagesrc="images/TitanWine.png">Wine Taste</option>
+      		<option value="7"
+			            data-imagesrc="images/TitanBottle.png">Bottle Clock</option>
+      		<option value="8"
+			            data-imagesrc="images/TitanNavy.png">Navy Man</option>
+      		<option value="9"
+			            data-imagesrc="images/TitanRainbow.png">Rainbow Warrior</option>
+      		<option value="10"
+			            data-imagesrc="images/TitanPapyre.png">Papyrus</option>
+      		<option value="11"
+			            data-imagesrc="images/TitanClassic.png">Classic Taste</option>
+      		<option value="12"
+			            data-imagesrc="images/Orange.png">Orange Obsession</option>
+      		<option value="13"
+			            data-imagesrc="images/SimplyRed.png">Simply Red</option>
+      		<option value="14"
+			            data-imagesrc="images/BasicGreen.png">Basic Green</option>
+      		<option value="15"
+			            data-imagesrc="images/BlueBase.png">Blue Base</option>
+      		<option value="16"
+			            data-imagesrc="images/YellowMoon.png">Yellow Moon</option>
+      		<option value="17"
+			            data-imagesrc="images/FollyDay.png">Folly Day</option>
+      		<option value="18"
+			            data-imagesrc="images/ClearWhite.png">Clear White</option>
+      		<option value="19"
+			            data-imagesrc="images/PlatinumEdition.png">Platinum Edition</option>
+      		<option value="20"
+			            data-imagesrc="images/Graphite.png">Graphite</option>
+     		<option value="21"
+			            data-imagesrc="images/Black.png">Black</option>
+     		<option value="22"
+			            data-imagesrc="images/PrideDay.png">Pride Day</option>
+     		<option value="23"
+			            data-imagesrc="images/July4.png">Happy 4th July</option>
+     		<option value="24"
+			            data-imagesrc="images/GrayScale.png">Gray Scale</option>
+		</select>
+	</fieldset>
+	<fieldset  id="lHandType" class="ui-field-contain"  style="background-color:orange">
+        <label><b>Hands Type:</b></label>
+	</fieldset>
+	<fieldset class="ui-field-contain" id="x">
+		<input type="hidden" name="hHandType" id="hHandType" value="" />
+        <select name="HandType" id="HandType">
+      		<option value="1"
+			            data-imagesrc="images/hands1.png">Basic extended</option>
+      		<option value="2"
+			            data-imagesrc="images/hands2.png">Modern</option>
+      		<option value="3"
+			            data-imagesrc="images/hands3.png">Basic short</option>
+      		<option value="4"
+			            data-imagesrc="images/hands4.png">Artistic</option>
+      		<option value="5"
+			            data-imagesrc="images/hands5.png">Basic filled extended</option>
+      		<option value="6"
+			            data-imagesrc="images/hands6.png">Basic filled short</option>
+    	</select>
+	</fieldset>
+	<fieldset id="lNumbersType"  class="ui-field-contain"  style="background-color:orange">
+		<label><b>Hour Numbers:</b></label>
+	</fieldset>
+	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hNumbersType" id="hNumbersType" value="" />
+		<select name="NumbersType" id="NumbersType">
+      			<option value="7"
+			            data-imagesrc="images/numbers7.png">Only minutes quarters</option>
+      			<option value="6"
+			            data-imagesrc="images/numbers6.png">All minutes</option>
+      			<option value="5"
+			            data-imagesrc="images/numbers5.png">All hours</option>
+      			<option value="4"
+			            data-imagesrc="images/numbers4.png">Roman all hours</option>
+      			<option value="3"
+			            data-imagesrc="images/numbers3.png">Only quarters</option>
+      			<option value="2"
+			            data-imagesrc="images/numbers2.png">Roman only quarters</option>
+      			<option value="1"
+			            data-imagesrc="images/numbers1.png">No numbers</option>
+     		</select>
+    </fieldset>
+		<fieldset id="lTicks"  class="ui-field-contain"  style="background-color:orange">
+		<label><b>Minute Ticks:</b></label>
+	</fieldset>
+	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hTicks" id="hTicks" value="" />
+		<select name="Ticks" id="Ticks">
+      			<option value="0"
+			            data-imagesrc="images/ticks0.png">No ticks</option>
+      			<option value="1"
+			            data-imagesrc="images/ticks1.png">Only quarter ticks</option>
+      			<option value="2"
+			            data-imagesrc="images/ticks2.png">Only hour ticks</option>
+      			<option value="3"
+			            data-imagesrc="images/ticks3.png">All ticks</option>
+     		</select>
+      	</fieldset>
+	<fieldset id="lRadio" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Zoom Ratio:</b></label>
+	</fieldset>
+	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hRadio" id="hRadio" value="" />
+		<select name="Radio" id="Radio">
+			<option value="111" 
+                        data-imagesrc="images/z111.png">111</option>
+			<option value="108" 
+                        data-imagesrc="images/z108.png">108</option>
+			<option value="105" 
+                        data-imagesrc="images/z105.png">105</option>
+			<option value="102" 
+                        data-imagesrc="images/z102.png">102</option>
+			<option value="99" 
+                        data-imagesrc="images/z99.png">99</option>
+			<option value="96" 
+                        data-imagesrc="images/z96.png">96</option>
+			<option value="93" 
+                        data-imagesrc="images/z93.png">93</option>
+			<option value="90" 
+                        data-imagesrc="images/z90.png">90</option>
+			<option value="87" 
+                        data-imagesrc="images/z87.png">87</option>
+			<option value="84" 
+                        data-imagesrc="images/z84.png">84</option>
+			<option value="81" 
+                        data-imagesrc="images/z81.png">81</option>
+			<option value="78" 
+                        data-imagesrc="images/z78.png">78</option>
+			<option value="75" 
+                        data-imagesrc="images/z75.png">75</option>
+			<option value="72" 
+                        data-imagesrc="images/z72.png">72</option>
+			<option value="69" 
+                        data-imagesrc="images/z69.png">69</option>
+    		</select>
+	</fieldset>
+	<fieldset id="lDateBox" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Date Box:</b></label>
+	</fieldset>
+      	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hDateBox" id="hDateBox" value="" />
+		<select name="DateBox" id="DateBox">
+      			<option value="0" 
+				        data-description="Date inside a small box"
+                        data-imagesrc="images/DBoxON.png">On</option>
+      			<option value="1" 
+				        data-description="Date printed on watch surface"
+                        data-imagesrc="images/DBoxOFF.png">Off</option>
+    		</select>
+      	</fieldset>
+	<fieldset id="lCrown" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Draw External Circle:</b></label>
+	</fieldset>
+      	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hCrown" id="hCrown" value="" />
+		<select name="Crown" id="Crown">
+      			<option value="0" 
+				        data-description="Draw external circle"
+                        data-imagesrc="images/crownON.png">On</option>
+      			<option value="1" 
+				        data-description="No external circle"
+                        data-imagesrc="images/crownOFF.png">Off</option>
+    		</select>
+      	</fieldset>
+	<fieldset id="lShowseconds" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Seconds Hand:</b></label>
+	</fieldset>
+      	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hShowseconds" id="hShowseconds" value="" />
+		<select name="Showseconds" id="Showseconds">
+      			<option value="0" 
+				        data-description="More battery consumption"
+                        data-imagesrc="images/secON.png">On</option>
+      			<option value="1" 
+				        data-description="Better for long battery"
+                        data-imagesrc="images/secOFF.png">Off</option>
+    		</select>
+      	</fieldset>
+	<fieldset id="lShowshadows" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Hand Shadows:</b></label>
+	</fieldset>
+      	<fieldset class="ui-field-contain">
+		<input type="hidden" name="hShowshadows" id="hShowshadows" value="" />
+		<select name="Showshadows" id="Showshadows">
+       			<option value="0" 
+				        data-description="Hands and Date Box have shadows effects"
+                        data-imagesrc="images/shadowsON.png">On</option>
+      			<option value="1" 
+				        data-description="No shadows effects"
+                        data-imagesrc="images/shadowsOFF.png">Off</option>
+    		</select>
+       </fieldset>
+	<fieldset id="lBattery" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Battery Type:</b></label>
+	</fieldset>
+     <fieldset class="ui-field-contain">
+           	<input type="hidden" name="hBattery" id="hBattery" value="" />
+    		<select name="Battery" id="Battery">
+      			<option value="0" 
+				        data-description="Graphic Type (small squares)"
+                                        data-imagesrc="images/Battery0.png">Graphic Type</option>
+      			<option value="1" 
+				        data-description="Digital Type (With box if Date Box selected)"
+                                        data-imagesrc="images/Battery1.png">Digital Type</option>
+    		</select>
+     </fieldset>
+	<fieldset id="lShowBluetooth" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Bluetooth Alert:</b></label>
+	</fieldset>
+     <fieldset class="ui-field-contain">
+           	<input type="hidden" name="hShowBluetooth" id="hShowBluetooth" value="" />
+    		<select name="ShowBluetooth" id="ShowBluetooth">
+      			<option value="0" 
+				        data-description="No Bluetooth alert"
+                                        data-imagesrc="images/bluetoothOFF.png">Off</option>
+      			<option value="1" 
+				        data-description="Small circle over battery level if Bluetooth is lost"
+                                        data-imagesrc="images/bluetoothON.png">On</option>
+      			<option value="2" 
+				        data-description="Vibration & small circle over battery level if Bluetooth is lost"
+                                        data-imagesrc="images/bluetoothON.png">On</option>
+    		</select>
+     </fieldset>
+     <fieldset id="lLight" class="ui-field-contain"  style="background-color:orange">
+		<label><b>Back Light:</b></label>
+     </fieldset>
+     <fieldset class="ui-field-contain">
+			<select name="Light" id="Light">
+				<option value="0">Pebble Default</option>
+				<option value="3">3 seconds</option>
+				<option value="5">5 seconds, your battery will drain faster</option>
+				<option value="7">7 seconds, your battery will drain faster</option>
+				<option value="10">10 seconds, your battery will drain faster</option>
+				<option value="15">15 seconds, your battery will drain faster</option>
+				<option value="30">30 seconds, your battery will drain faster</option>
+				<option value="60">60 seconds, your battery will drain faster</option>
+			</select>
+     </fieldset>
+
+    <fieldset class="ui-btn" style="background-color:black">
+		<input type="button" style="background-color:gray" name="cancel" id="cancel" value="  Cancel  ">
+		<input type="button" style="background-color:orange" name="submit" id="submit" value="  Submit Conf. ">
+	</fieldset>
+	</font>
+    </form>
+
+   </div>
+
+  </div>
+
+<script>
+	var a=0;
+	(function($) {
+    $.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, 'fast');
+        return this; // for chaining...
+    }
+	})(jQuery);
+	$('#SrcSaver').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){ 
+                $('#hSrcSaver').val(data.selectedData.value);
+				if (a==1) {$('#lSrcSaver').goTo();}
+					}
+	});
+  	$('#ClockType').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){ 
+                $('#hClockType').val(data.selectedData.value);
+				if (a==1) {$('#lClockType').goTo();}
+					}
+	});
+ 	$('#HandType').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hHandType').val(data.selectedData.value);
+				if (a==1) {$('#lHandType').goTo();}
+					}   
+	});
+ 	$('#NumbersType').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hNumbersType').val(data.selectedData.value);
+				if (a==1) {$('#lNumbersType').goTo();}
+					}   
+	});
+ 	$('#Ticks').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hTicks').val(data.selectedData.value);
+				if (a==1) {$('#lTicks').goTo();}
+					}   
+	});
+ 	$('#Radio').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hRadio').val(data.selectedData.value);
+				if (a==1) {$('#lRadio').goTo();}
+					}   
+	});
+ 	$('#DateBox').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hDateBox').val(data.selectedData.value);
+				if (a==1) {$('#lDateBox').goTo();}
+					}   
+	});
+ 	$('#Crown').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hCrown').val(data.selectedData.value);
+				if (a==1) {$('#lCrown').goTo();}
+					}   
+	});	
+ 	$('#Showseconds').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hShowseconds').val(data.selectedData.value);
+				if (a==1) {$('#lShowseconds').goTo();}
+					}   
+	});
+ 	$('#Showshadows').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hShowshadows').val(data.selectedData.value);
+				if (a==1) {$('#lShowshadows').goTo();}
+					}   
+	});
+ 	$('#ShowBluetooth').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hShowBluetooth').val(data.selectedData.value);
+				if (a==1) {$('#lShowBluetooth').goTo();}
+					}   
+	});
+ 	$('#Battery').ddslick({
+		width: 300,
+		imagePosition: "left",
+		showSelectedHTML: true,
+		onSelected: function(data){  
+                $('#hBattery').val(data.selectedData.value);
+				if (a==1) {$('#lBattery').goTo();}
+					}   
+	});
+	
+ //function to retrive parameters from url
+  function getURLVariable(name)  {
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)",
+      regex = new RegExp(regexS),
+      results = regex.exec(window.location.href);
+  if (results == null) return "";
+  else return results[1];
+  };
+  
+  //Setup to allow easy adding more options later
+  function saveOptions() {
+    var options = {
+      "Showseconds": $("#hShowseconds").val(),
+      "Showshadows": $("#hShowshadows").val(),
+      "Radio": $("#hRadio").val(),
+      "ClockType": $('#hClockType').val(),
+      "HandType": $('#hHandType').val(),
+      "ShowBluetooth": $("#hShowBluetooth").val(),
+      "NumbersType":$('#hNumbersType').val(),
+      "DateBox": $("#hDateBox").val(),
+      "UseCrown": $("#hCrown").val(),
+      "HandleTicks": $("#hTicks").val(),
+      "SrcSaver": $("#hSrcSaver").val(),
+      "Timer": $("#Time").val(),
+      "Light": $("#Light").val(),
+	  "Battery": $("#hBattery").val()
+    }
+    return options;
+  };
+ 
+function applyCurrConfigFromUrl()
+      {var KeySearch = decodeURI(getURLVariable('Battery'));
+		if (KeySearch) {
+		  $('#Battery').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#battery').ddslick('select', {index: 0});
+		}
+		console.log("Battery:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('ShowBluetooth'));
+		if (KeySearch) {
+		  $('#ShowBluetooth').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#ShowBluetooth').ddslick('select', {index: 1});
+		}
+		console.log("ShowBluetooth:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('Showshadows'));
+		if (KeySearch) {
+		  $('#Showshadows').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#Showshadows').ddslick('select', {index: 0});
+		}
+		console.log("Showshadows:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('Showseconds'));
+		if (KeySearch) {
+		  $('#Showseconds').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#Showseconds').ddslick('select', {index: 1});
+		}
+		console.log("Showseconds:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('UseCrown'));
+		if (KeySearch) {
+		  $('#Crown').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#Crown').ddslick('select', {index: 0});
+		}
+		console.log("Showseconds:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('DateBox'));
+		if (KeySearch) {
+		  $('#DateBox').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#DateBox').ddslick('select', {index: 0});
+		}
+		console.log("DateBox:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('Radio'));
+		if (KeySearch) {
+		  $('#Radio').ddslick('select', {index: (111-KeySearch)/3});
+		} else {
+		  $('#Radio').ddslick('select', {index: 5});
+		}
+		console.log("Radio:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('HandleTicks'));
+		if (KeySearch) {
+		  $('#Ticks').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#Ticks').ddslick('select', {index: 3});
+		}
+		console.log("Ticks:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('NumbersType'));
+		if (KeySearch) {
+		  $('#NumbersType').ddslick('select', {index: 7-KeySearch});
+		} else {
+		  $('#NumbersType').ddslick('select', {index: 2});
+		}
+		console.log("NumbersType:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('HandType'));
+		if (KeySearch) {
+		  $('#HandType').ddslick('select', {index: KeySearch-1});
+		} else {
+		  $('#HandType').ddslick('select', {index: 0});
+		}
+		console.log("HandType:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('ClockType'));
+		if (KeySearch) {
+		  $('#ClockType').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#ClockType').ddslick('select', {index: 0});
+		}
+		console.log("ClockType:"+ JSON.stringify(KeySearch));
+	 
+		KeySearch = decodeURI(getURLVariable('SrcSaver'));
+		if (KeySearch) {
+		  $('#SrcSaver').ddslick('select', {index: KeySearch});
+		} else {
+		  $('#SrcSaver').ddslick('select', {index: 0});
+		}
+		console.log("SrcSaver:"+ JSON.stringify(KeySearch));
+		
+		KeySearch = decodeURI(getURLVariable('Timer'));
+		if (KeySearch) {
+		  $('#Time').val(KeySearch);
+		} else {
+		  $('#Time').val(3);
+		}
+		console.log("Time:"+ JSON.stringify(KeySearch));
+		KeySearch = decodeURI(getURLVariable('Light'));
+		if (KeySearch) {
+		  $('#Light').val(KeySearch);
+		} else {
+		  $('#Light').val(0);
+		}
+		console.log("Light:"+ JSON.stringify(KeySearch));
+      };
+	  
+      $(document).ready(function() {
+			applyCurrConfigFromUrl();
+			a = 1;
+			$('html,body').animate({scrollTop:0});
+			$('#cancel').click(function() {
+				document.location = 'pebblejs://close';
+			});
+			$("#submit").click(function() {
+				var settings = saveOptions();
+				var location = 'pebblejs://close#' + encodeURIComponent(JSON.stringify(settings));
+				console.log("submit: "+JSON.stringify(settings));
+				document.location = location;
+			});
+	});
+	
+</script>
+</body>
+</html>
